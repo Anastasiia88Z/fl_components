@@ -1,4 +1,4 @@
-import 'dart:html';
+import 'package:flutter/material.dart';
 
 import 'package:flutter/material.dart';
 
@@ -8,8 +8,7 @@ import 'package:flutter_application_1/screens/screens.dart';
 class AppRoutes {
   static const initialRoute = 'home';
 
-  static final MenuOption = <MenuOption>[
-    //TODO: BORRAR home
+  static final menuOptions = <MenuOption>[
     MenuOption(
         route: 'home',
         name: 'HomeScreen',
@@ -38,12 +37,13 @@ class AppRoutes {
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
+    Map<String, Widget Function(BuildContext)> appRoutes = {};
 
-    Map<String, String> appRoutes = {
+    for (final option in menuOptions) {
+      appRoutes.addAll({option.route: (BuildContext context) => option.screen});
+    }
 
-    };
-
-    return
+    return appRoutes;
   }
 
   //static Map<String, Widget Function(BuildContext)> routes = {

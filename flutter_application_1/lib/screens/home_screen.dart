@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/screens.dart';
+import 'package:flutter_application_1/router/app_routes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Components en Flutter'),
+          title: const Text('Components en Flutter'),
           elevation: 0,
         ),
         body: ListView.separated(
@@ -23,6 +23,6 @@ class HomeScreen extends StatelessWidget {
                   Navigator.pushNamed(context, 'alert');
                 }),
             separatorBuilder: (_, __) => const Divider(),
-            itemCount: 10));
+            itemCount: AppRoutes.menuOptions.length));
   }
 }
