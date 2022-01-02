@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/material.dart';
-
 import 'package:flutter_application_1/models/models.dart';
 import 'package:flutter_application_1/screens/screens.dart';
 
@@ -11,7 +9,7 @@ class AppRoutes {
   static final menuOptions = <MenuOption>[
     MenuOption(
         route: 'home',
-        name: 'HomeScreen',
+        name: 'Home Screen',
         screen: const HomeScreen(),
         icon: Icons.home),
     MenuOption(
@@ -31,7 +29,7 @@ class AppRoutes {
         icon: Icons.add_alert),
     MenuOption(
         route: 'card',
-        name: 'Tarjetas -Cards',
+        name: 'Tarjetas - Cards',
         screen: const CardScreen(),
         icon: Icons.credit_card),
   ];
