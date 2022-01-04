@@ -21,7 +21,8 @@ class CustomCardType2 extends StatelessWidget {
           FadeInImage(
             image: NetworkImage(imageUrl),
             placeholder: const AssetImage('assets/jar-loading (2).gif'),
-            width: double.infinity,
+            width: double.maxFinite,
+            //width: double.infinity,
             height: 230,
             fit: BoxFit.cover,
             fadeInDuration: const Duration(milliseconds: 300),

@@ -18,18 +18,18 @@ class CardScreen extends StatelessWidget {
               SizedBox(height: 10),
               CustomCardType2(
                 imageUrl:
-                    'http://www.solofondos.com/wp-content/uploads/2016/04/mountain-landscape-wallpaper.jpg',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1200px-24701-nature-natural-beauty.jpg',
               ),
               SizedBox(height: 20),
               CustomCardType2(
                 imageUrl:
-                    'https://www.mickeyshannon.com/images/landscape-photography.jpg',
+                    'https://miro.medium.com/max/1200/0*UzP3bFw04qEM-R_Z.jpg',
               ),
               SizedBox(height: 20),
               CustomCardType2(
                 name: 'Un hermoso paisaje',
                 imageUrl:
-                    'https://www.theolivepress.es/wp-content/uploads/2019/02/High-frontier.jpg',
+                    'https://miro.medium.com/max/1400/0*dR_jn8Nt0M0IXwPW.',
               ),
               SizedBox(height: 100),
             ]));
