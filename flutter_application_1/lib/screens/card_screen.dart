@@ -16,10 +16,22 @@ class CardScreen extends StatelessWidget {
             children: const [
               CustomcardType1(),
               SizedBox(height: 10),
-              CustomCardType2(),
-              SizedBox(height: 10),
-              //CustomcardType1(),
-              //CustomcardType1(),
+              CustomCardType2(
+                imageUrl:
+                    'http://www.solofondos.com/wp-content/uploads/2016/04/mountain-landscape-wallpaper.jpg',
+              ),
+              SizedBox(height: 20),
+              CustomCardType2(
+                imageUrl:
+                    'https://www.mickeyshannon.com/images/landscape-photography.jpg',
+              ),
+              SizedBox(height: 20),
+              CustomCardType2(
+                name: 'Un hermoso paisaje',
+                imageUrl:
+                    'https://www.theolivepress.es/wp-content/uploads/2019/02/High-frontier.jpg',
+              ),
+              SizedBox(height: 100),
             ]));
   }
 }
