@@ -6,3 +6,4 @@ export 'package:flutter_application_1/screens/home_screen.dart';
 export 'package:flutter_application_1/screens/avatar_screen.dart';
 export 'package:flutter_application_1/screens/animated_screen.dart';
 export 'package:flutter_application_1/screens/input_screen.dart';
+export 'package:flutter_application_1/screens/slider_screen.dart';
